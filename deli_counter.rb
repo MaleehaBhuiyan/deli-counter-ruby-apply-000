@@ -1,4 +1,5 @@
 katz_deli = []
+$number = 0
 
 def line(katz_deli)
   if katz_deli.length == 0
@@ -14,10 +15,13 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, customer_name)
-  katz_deli.push(customer_name)
-  puts "Welcome, #{customer_name}. You are number #{katz_deli.length} in line."
+def take_a_number()
+  $number += 1
+  puts "Order Number, #{$number}."
 end
+puts take_a_number
+puts take_a_number
+puts take_a_number
 
 def now_serving(katz_deli)
   if katz_deli.length == 0
